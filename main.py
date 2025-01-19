@@ -1,6 +1,6 @@
 def hello():
     greeting = "hi"
-    return greeting
+    return greeting  # Returning greeting to make it accessible outside
 
 
 def bye():
@@ -8,4 +8,4 @@ def bye():
     return farewell
 
 
-print(greeting)  # Error: NameError - 'greeting' is not defined outside hello()
+print(hello())  # This works because `hello()` now returns the greeting
